@@ -32,7 +32,7 @@ export default function App() {
                 <NavigationContainer>
                     <Stack.Navigator>
                         <Stack.Screen
-                            name="Quotes 🤡🍊"
+                            name="Quotes"
                             component={DetailScreen}
                             options={{
                                 headerLargeTitle: true,
