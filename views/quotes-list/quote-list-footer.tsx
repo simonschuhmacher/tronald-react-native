@@ -20,15 +20,14 @@ export default function QuoteListFooter({ text }: { text: string }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 22,
-        paddingHorizontal: 16,
+        position: 'absolute',
+        left: 16,
+        right: 16,
     },
     text: {
         fontFamily: 'Inter-SemiBold',
         textAlign: 'center',
         color: 'gray',
-        position: 'absolute',
-        left: 16,
-        right: 16,
+        paddingVertical: 22,
     },
 })
