@@ -9,7 +9,7 @@ export default function QuoteListFooter({ text }: { text: string }) {
             <Text
                 style={{
                     ...styles.text,
-                    bottom: -insets.bottom - 40,
+                    bottom: -insets.bottom - 20,
                 }}
             >
                 {text}
