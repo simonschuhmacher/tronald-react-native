@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
-export default function QuoteListFooter({ text }: { text: string }) {
+export default function QuotesListFooter({ text }: { text: string }) {
     const insets = useSafeAreaInsets()
 
     return (

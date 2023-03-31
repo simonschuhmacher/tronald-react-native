@@ -1,4 +1,4 @@
-import DetailScreen from './screens/detail-screen'
+import DetailScreen from './screens/DetailScreen'
 import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import { useCallback } from 'react'
