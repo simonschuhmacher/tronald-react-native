@@ -44,13 +44,13 @@ export default function App() {
                     <Stack.Navigator
                         screenOptions={{
                             headerTitleStyle: {
-                                fontFamily: 'Inter-SemiBold',
+                                fontFamily: 'Inter-Bold',
                             },
                             headerLargeTitleStyle: {
-                                fontFamily: 'Inter-SemiBold',
+                                fontFamily: 'Inter-Bold',
                             },
                             headerBackTitleStyle: {
-                                fontFamily: 'Inter-SemiBold',
+                                fontFamily: 'Inter-Medium',
                             },
                         }}
                     >
