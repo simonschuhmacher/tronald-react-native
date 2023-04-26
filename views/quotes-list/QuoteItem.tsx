@@ -1,7 +1,10 @@
 import { View, Text, StyleSheet } from 'react-native'
 import type { Quote } from '../../model/quote'
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 
 export default function QuoteItem({ quote }: { quote: Quote }) {
+    const safeAreaInsets = useSafeAreaInsets()
+
     function parseDate(dateString: string): string {
         const date = new Date(dateString)
         return date.toLocaleDateString()
@@ -10,7 +13,7 @@ export default function QuoteItem({ quote }: { quote: Quote }) {
     const date = parseDate(quote.appeared_at)
 
     return (
-        <View style={styles.container}>
+        <View style={{ ...styles.container, marginLeft: safeAreaInsets.left, marginRight: safeAreaInsets.right }}>
             <Text style={styles.value}>
                 <Text style={styles.quotes}>“ </Text>
                 {quote.value}

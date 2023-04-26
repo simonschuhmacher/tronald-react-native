@@ -22,6 +22,7 @@ export default function App() {
     const [fontsLoaded] = useFonts({
         'Lora-Medium': require('./assets/fonts/Lora/Lora-Medium.ttf'),
         'Lora-SemiBold': require('./assets/fonts/Lora/Lora-Medium.ttf'),
+        'Inter-Medium': require('./assets/fonts/Inter/Inter-Medium.ttf'),
         'Inter-SemiBold': require('./assets/fonts/Inter/Inter-SemiBold.ttf'),
         'Inter-Bold': require('./assets/fonts/Inter/Inter-Bold.ttf'),
     })

@@ -9,19 +9,17 @@ export default function QuotesListView(props: { quotes: Quote[]; onSelect: (quot
     const quotes = props.quotes
     const onSelect = props.onSelect
     return (
-        <View style={styles.container}>
-            <FlatList
-                data={quotes}
-                renderItem={({ item }) => (
-                    <Pressable onPress={() => onSelect(item)}>
-                        <QuoteItem quote={item}></QuoteItem>
-                    </Pressable>
-                )}
-                ItemSeparatorComponent={ListSeparator}
-                contentInsetAdjustmentBehavior="automatic"
-                ListFooterComponent={<QuotesListFooter text="🤡🍊" />}
-            />
-        </View>
+        <FlatList
+            data={quotes}
+            renderItem={({ item }) => (
+                <Pressable onPress={() => onSelect(item)}>
+                    <QuoteItem quote={item}></QuoteItem>
+                </Pressable>
+            )}
+            ItemSeparatorComponent={ListSeparator}
+            contentInsetAdjustmentBehavior="automatic"
+            ListFooterComponent={<QuotesListFooter text="🤡🍊" />}
+        />
     )
 }
 

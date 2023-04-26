@@ -1,7 +1,13 @@
 import { View, StyleSheet } from 'react-native'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 export default function ListSeparator() {
-    return <View style={styles.container} />
+    const safeAreaInsets = useSafeAreaInsets()
+    return (
+        <View style={{ paddingLeft: safeAreaInsets.left, paddingRight: safeAreaInsets.right }}>
+            <View style={styles.container} />
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({

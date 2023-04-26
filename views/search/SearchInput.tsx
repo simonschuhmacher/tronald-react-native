@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
         padding: 0,
         borderWidth: 1,
         borderRadius: CORNER_RADIUS,
+        backgroundColor: 'white',
     },
     input: {
         flex: 1,
