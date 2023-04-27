@@ -57,8 +57,4 @@ const styles = StyleSheet.create({
         color: 'white',
         padding: 10,
     },
-    inputAccessoryViewInner: {
-        alignItems: 'flex-end',
-        justifyContent: 'flex-end',
-    },
 })

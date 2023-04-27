@@ -52,29 +52,12 @@ export default function App() {
                             headerBackTitleStyle: {
                                 fontFamily: 'Inter-Medium',
                             },
+                            headerLargeTitle: true,
                         }}
                     >
-                        <Stack.Screen
-                            name="Search"
-                            component={SearchScreen}
-                            options={{
-                                headerLargeTitle: true,
-                            }}
-                        />
-                        <Stack.Screen
-                            name="Quotes"
-                            component={QuoteListScreen}
-                            options={{
-                                headerLargeTitle: true,
-                            }}
-                        />
-                        <Stack.Screen
-                            name="Quote"
-                            component={QuoteDetailScreen}
-                            options={{
-                                headerLargeTitle: true,
-                            }}
-                        />
+                        <Stack.Screen name="Search" component={SearchScreen} />
+                        <Stack.Screen name="Quotes" component={QuoteListScreen} />
+                        <Stack.Screen name="Quote" component={QuoteDetailScreen} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </SafeAreaProvider>

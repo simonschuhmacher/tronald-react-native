@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlatList, Pressable, StyleSheet, View } from 'react-native'
 import { Quote } from '../../model/quote'
 import ListSeparator from './ListSeparator'
@@ -22,9 +21,3 @@ export default function QuotesListView(props: { quotes: Quote[]; onSelect: (quot
         />
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-})

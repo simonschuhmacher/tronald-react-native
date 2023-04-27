@@ -20,7 +20,7 @@ export default function QuoteListScreen({ route, navigation }: NativeStackScreen
             .then(response => setQuotes(response?._embedded?.quotes ?? []))
             .catch(alertError)
             .finally(() => setLoading(false))
-    }, [])
+    }, [navigation, searchQuery])
 
     return (
         <View style={styles.container}>
