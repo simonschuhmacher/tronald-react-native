@@ -12,7 +12,8 @@
         },
         "assetBundlePatterns": ["**/*"],
         "ios": {
-            "supportsTablet": true
+            "supportsTablet": true,
+            "bundleIdentifier": "im.schuhmacher.TronaldDump"
         },
         "android": {
             "adaptiveIcon": {
