@@ -5,13 +5,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useHeaderHeight } from '@react-navigation/elements'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../App'
+import KeyboardHidingView from '../views/general/KeyboardHidingContainer'
 
 export default function SearchScreen({ route, navigation }: NativeStackScreenProps<RootStackParamList, 'Search'>) {
     const safeAreaInsets = useSafeAreaInsets()
     const headerHeight = useHeaderHeight()
 
     return (
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <KeyboardHidingView>
             <KeyboardAvoidingView
                 style={{
                     ...styles.container,
@@ -28,7 +29,7 @@ export default function SearchScreen({ route, navigation }: NativeStackScreenPro
                 ></SearchInput>
                 <StatusBar style="auto" />
             </KeyboardAvoidingView>
-        </TouchableWithoutFeedback>
+        </KeyboardHidingView>
     )
 }
 
