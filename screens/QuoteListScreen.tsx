@@ -6,7 +6,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../App'
 import { useEffect, useState } from 'react'
 import { searchQuote } from '../api/api'
-import LoadingView from '../views/loading/LoadingView'
+import LoadingView from '../views/general/LoadingView'
 import NoResultsView from '../views/no-results/NoResultsView'
 
 export default function QuoteListScreen({ route, navigation }: NativeStackScreenProps<RootStackParamList, 'Quotes'>) {
